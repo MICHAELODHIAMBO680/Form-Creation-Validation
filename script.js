@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+function initializeFormValidation() {
     // Select form and feedback elements
     const form = document.getElementById("registration-form");
     const feedbackDiv = document.getElementById("form-feedback");
@@ -44,4 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
             feedbackDiv.style.color = "#dc3545"; // Red color for errors
         }
     });
-});
+}
+
+// Initialize form validation on DOMContentLoaded
+document.addEventListener("DOMContentLoaded", initializeFormValidation);
